@@ -321,6 +321,7 @@ pub struct InitAccount<'info> {
     /// CHECK: safe authority
     #[account(signer)]
     authority: AccountInfo<'info>,
+    /// CHECK: safe
     market: AccountInfo<'info>,
     dex_program: AccountInfo<'info>,
     rent: AccountInfo<'info>,
